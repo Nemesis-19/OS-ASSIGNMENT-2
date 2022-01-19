@@ -1,0 +1,9 @@
+203,210d202
+< SYSCALL_DEFINE4(kernel_2d_memcpy, float **, inp, float **, out, int, row, int, col)
+< {
+< 	float arr_ptr[row][col];
+< 	__copy_from_user(arr_ptr, out, row*col*sizeof(float));
+< 	__copy_to_user(inp, arr_ptr, row*col*sizeof(float));
+< 	return 1;
+< }
+< 
